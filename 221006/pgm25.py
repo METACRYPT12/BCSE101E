@@ -45,7 +45,7 @@ for i in range(0, 3):
     for j in range(0, 3):
         sum1 = 0
         for k in range(0, 3):
-            sum1 = sum1+a1[k][j]*a2[j][k]
+            sum1 = sum1+a1[i][k]*a2[k][j]
         v.append(sum1)
     prod.append(v)
 
