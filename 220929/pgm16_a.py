@@ -1,4 +1,4 @@
-# Find the biggest among three numbers
+# Find the biggest among 10 numbers
 
 a = []
 i = 0
