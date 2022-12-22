@@ -6,7 +6,7 @@ n = int(input())  # Storing the number of candidates
 C = []  # Temporary list to store Candidate marks
 marks = []  # Final list that stores Marks
 for i in range(n):
-    C.append(input())
+    C.append(input().split())
     marks.append(0.0)  # Initialising marks[]
     for j in range(5):
         if (C[i][j] == key[j]):  # Matching Candidate answers with keys
@@ -39,7 +39,7 @@ else:
             # Checking if 2 or more Candidates have Same Marks
             if marks[k] == marks[l] and k != l:
                 dup.add(marks[k])  # Adding duplicates to Set
-    while (len(marks) != i):
+    while (len(marks) > i + 1):
         if (marks[i] in dup):  # Checking if scored mark exist in dup set
             pos = []  # List to store position of duplicates
             pos.append(i)  # Storing first identified duplicate
@@ -51,8 +51,10 @@ else:
                 if (marks[k] in dup and marks[k] in c_order):
                     print("C{0} ".format(c_order.index(marks[k]) + 1), end="")
                     # updating already printed mark to defunct values
+                    tempPurgeVar = marks[k]
                     c_order[c_order.index(marks[k])] = -50
             print(end="\t\t")
+            dup.remove(tempPurgeVar)
             print(marks[i])  # Printing Candidate`s Marks
             i = i + 1
             j = j + 1
