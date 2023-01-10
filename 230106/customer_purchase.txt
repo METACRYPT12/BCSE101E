@@ -1,0 +1,6 @@
+customerId,Product,Quantity,rate,TotalPrice
+111,soap,1,45.0,45.0
+111,book,2,200.0,400.0
+222,pen,1,20.0,20.0
+333,ink,1,50.0,50.0
+TotalAmount: Rs:515.0
