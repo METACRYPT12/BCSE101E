@@ -1,0 +1,12 @@
+
+A. Regular(9 seats)
+B. Tatkal(2 seats)
+Ajay - 50 - Bengaluru - Hosur - 15
+Ranjan - 64 - Bengaluru - Hosur - 14
+Ananth - 25 - Bengaluru - Hosur - 13
+
+Total Fare: 142.5
+
+Abc - 25 - Bengaluru - Vellore - 12
+
+Total Fare: 650.0
